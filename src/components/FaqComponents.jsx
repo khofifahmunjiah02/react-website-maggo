@@ -1,3 +1,4 @@
+ 
 const FaqComponents = () => {
   return (
     <div>FaqComponents</div>
