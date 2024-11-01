@@ -1,5 +1,5 @@
 import React from 'react'
-import '../dist/css/sdg.css'
+import '../css/sdg.css'
 import sdg from '../assets/img/sdg.png'
 
 export const SDG = () => {
