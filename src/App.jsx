@@ -1,32 +1,31 @@
-import {Routes, Route} from 'react-router-dom'
-import NavbarComponent from './components/NavbarComponents'
-import FooterComponent from './components/FooterComponents'
+import { Routes, Route } from "react-router-dom"
 
-import LandingPage from './pages/LandingPage'
-import Produk from './pages/Produk'
-import Jasa from './pages/Jasa'
-import RuangTanya from './pages/RuangTanya'
-import Blog from './pages/Blog'
-import TentangKami from './pages/TentangKami'
+import NavBarComponents from "./components/NavBarComponents"
+import FooterComponents from "./components/FooterComponents"
+ 
 
+import LandingPage from "./pages/LandingPage"
+import Jasa from "./pages/Jasa"
+import Produk from "./pages/Produk"
+import RuangTanya from "./pages/RuangTanya"
+import Blog from "./pages/Blog"
+import TentangKami from "./pages/TentangKami"
 
-
-
-
-function App() {
-  return <div>
-    <NavbarComponent/>
-    <Routes>
-      <Route path="/" Component={LandingPage} />
-      <Route path="/Produk" Component={Produk} />
-      <Route path="/Jasa" Component={Jasa} />
-      <Route path="/RuangTanya" Component={RuangTanya} />
-      <Route path="/Blog" Component={Blog} />
-      <Route path="/TentangKami" Component={TentangKami} />
-    </Routes>
-
-    <FooterComponent/>
-  </div>
+export default function App() {
+  return (
+    <div>
+      <NavBarComponents />
+      
+      <Routes>
+        <Route path="/" Component={LandingPage} />
+        <Route path="/jasa" Component={Jasa} />
+        <Route path="/produk" Component={Produk} />
+        <Route path="/ruang-tanya" Component={RuangTanya} />
+        <Route path="/blog" Component={Blog} />
+        <Route path="/tentang-kami" Component={TentangKami} />
+      </Routes>
+      
+      <FooterComponents />
+    </div>
+  )
 }
-
-export default App
