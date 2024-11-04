@@ -9,10 +9,6 @@ import RuangTanya from './pages/RuangTanya'
 import Blog from './pages/Blog'
 import TentangKami from './pages/TentangKami'
 
-
-
-
-
 function App() {
   return <div>
     <NavbarComponent/>
