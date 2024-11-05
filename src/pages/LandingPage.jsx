@@ -12,7 +12,7 @@ import quote2 from '../assets/img/landingpage/quote2.png'
 import gimi2 from '../assets/img/landingpage/gimi_testimoni.png'
 import { SDG } from '../components/SDG'
 
-
+ 
 
 
 

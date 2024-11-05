@@ -10,6 +10,8 @@ import Produk from "./pages/Produk"
 import RuangTanya from "./pages/RuangTanya"
 import Blog from "./pages/Blog"
 import TentangKami from "./pages/TentangKami"
+import ProdukPembelian  from "./pages/ProdukPembelian"
+import Penjemputan from "./pages/Penjemputan"
 
 export default function App() {
   return (
@@ -23,7 +25,10 @@ export default function App() {
         <Route path="/ruang-tanya" Component={RuangTanya} />
         <Route path="/blog" Component={Blog} />
         <Route path="/tentang-kami" Component={TentangKami} />
+        <Route path="/produk-pembelian" Component= {ProdukPembelian} />
+        <Route path="/penjemputan" Component={Penjemputan}></Route>
       </Routes>
+      
       
       <FooterComponents />
     </div>
