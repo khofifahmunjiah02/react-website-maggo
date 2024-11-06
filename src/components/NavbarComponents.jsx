@@ -23,7 +23,7 @@ const NavBarComponents = () => {
     window.addEventListener('scroll', changeBackgroundColor);
     return () => window.removeEventListener('scroll', changeBackgroundColor);
   }, []);
-
+ 
   return (
     <div>
       <Navbar expand="lg" fluid="md" className={`navbar-custom d-flex justify-content-center align-items-center ${changeColor ? "color-active" : ""}`}>

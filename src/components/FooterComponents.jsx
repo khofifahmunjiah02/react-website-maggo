@@ -7,7 +7,7 @@ import email from "../assets/img/footer/mail.png";
 const FooterComponents = () => {
   return (
     <div>
-      <footer className="text-center text-lg-start mt-xl-5 pt-4">
+      <footer className="text-center text-lg-start pt-4">
        
         <div className="container p-4">
          

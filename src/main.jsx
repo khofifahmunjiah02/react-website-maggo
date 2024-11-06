@@ -5,6 +5,7 @@ import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/main.css';
 import './css/landingpage.css';
+import './css/produk.css';
 
 import { BrowserRouter } from 'react-router-dom'
 
