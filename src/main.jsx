@@ -5,6 +5,12 @@ import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/main.css';
 import './css/landingpage.css';
+import './css/produk.css';
+import './css/TentangKami.css';
+import './css/faqComponents.css';
+import './css/penjemputan.css'
+import './css/konfirpembayaran.css'
+
 
 import { BrowserRouter } from 'react-router-dom'
 

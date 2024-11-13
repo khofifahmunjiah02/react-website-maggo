@@ -10,20 +10,35 @@ import Produk from "./pages/Produk"
 import RuangTanya from "./pages/RuangTanya"
 import Blog from "./pages/Blog"
 import TentangKami from "./pages/TentangKami"
-
+import ProdukPembelian  from "./pages/ProdukPembelian"
+import Penjemputan from "./pages/Penjemputan"
+import Penjemputan2 from "./pages/Penjemputan2"
+import BlogBuat from "./pages/BlogBuat"
+import BlogPost from "./pages/BlogPost"
+import Konfirpembayaran from "./pages/Konfirpembayaran"
+import ScrollToTop from "./components/ScrollToTop"
+import SupportChatWidget from "./components/SupportChatWidget"
+ 
 export default function App() {
   return (
     <div>
       <NavBarComponents />
-      
+      <ScrollToTop/>      
       <Routes>
         <Route path="/" Component={LandingPage} />
         <Route path="/jasa" Component={Jasa} />
         <Route path="/produk" Component={Produk} />
-        <Route path="/ruang-tanya" Component={RuangTanya} />
         <Route path="/blog" Component={Blog} />
         <Route path="/tentang-kami" Component={TentangKami} />
+        <Route path="/produk-pembelian" Component= {ProdukPembelian} />
+        <Route path="/penjemputan" Component={Penjemputan}></Route>
+        <Route path="/penjemputan2" Component={Penjemputan2}></Route>
+        <Route path="/Konfirpembayaran" Component={Konfirpembayaran}></Route>
+        <Route path="/blog-buat" Component={BlogBuat}></Route>
+        <Route path="/post/:postId" element={<BlogPost />} />
       </Routes>
+      {/* <SupportChatWidget/> */}
+      
       
       <FooterComponents />
     </div>

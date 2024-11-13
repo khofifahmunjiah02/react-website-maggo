@@ -5,8 +5,12 @@ header {
 }
 
 .landingpage-container {
-    margin-left: 240px;
-    margin-right: 240px;
+    /* margin-left: 240px;
+    margin-right: 240px; */
+}
+
+.landingpage {
+    width: 100%;
 }
 
 .landingpage .header-box h1
@@ -53,7 +57,7 @@ header {
     display: inline;
     color: var(--secondary-color-text);
 }
-
+ 
 /* Style Homepage Header */
 
 /* Style Homepage Kontributor & Jumlah Sampah */
@@ -63,9 +67,9 @@ header {
 }
 
 .hitungan .hitungan-cont {
-    padding: 0;
+    /* padding: 0;
     margin-left: 240px;
-    margin-right: 240px;
+    margin-right: 240px; */
 }
 
 .hitungan .hitungan-container {
@@ -143,10 +147,10 @@ header {
 
 .penjelasan .penjelasan_container {
     padding: 108px 12px;
-    margin-left: 240px;
+    /* margin-left: 240px;
     margin-right: 240px;
     width: 1103px;
-    height: 100%;
+    height: 100%; */
 }
 
 .penjelasan .penjelasan_container .penjelasan_wrap {
@@ -206,10 +210,10 @@ header {
 
 .yuk .yuk_container {
     /* padding: 108px 12px; */
-    margin-left: 240px;
+    /* margin-left: 240px;
     margin-right: 240px;
     width: 1103px;
-    height: 100%;
+    height: 100%; */
 }
 
 .yuk .yuk_container .yuk_wrap {
@@ -238,10 +242,10 @@ header {
 
 .benefit_container {
     padding: 108px 12px;
-    margin-left: 240px;
+    /* margin-left: 240px;
     margin-right: 240px;
     width: 1103px;
-    height: 100%;
+    height: 100%; */
 }
 
 .benefit_title {
@@ -337,10 +341,10 @@ header {
 
 .testimoni_container {
     padding: 48px 12px;
-    margin-left: 240px;
+    /* margin-left: 240px;
     margin-right: 240px;
-    /* width: 1103px; */
-    height: 100%;
+    width: 1103px;
+    height: 100%; */
 }
 
 .testimoni_wrap {
@@ -372,14 +376,14 @@ header {
 
 }
 
-.testimoni_wrap .testimoni_img {
-    position: absolute; /* Use absolute for specific placement */
-    right: 120px;       /* Adjust as needed */
-    top: 40px;          /* Adjust as needed */
+/* .testimoni_wrap .testimoni_img {
+    position: absolute;  
+    right: 120px;        
+    top: 40px;         
     width: 400px;       
-    height: auto;       /* Maintain aspect ratio */
+    height: auto;       
     z-index: 1;    
-}
+} */
 
 .testimoni_wrap .quote_wrap .quote_box {
     width: 350px;
@@ -433,11 +437,52 @@ header {
 
 /* Style Testimoni */
 
+/* Carousel Text */
+
+.scrolling-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+.scrolling-text h1 {
+    display: inline-block;
+    white-space: nowrap; /* Prevent line break */
+    animation: scrollText 40s linear infinite; /* Adjust timing as needed */
+    font-size: 64px; /* Adjust text size */
+    font-weight: bold;
+    padding: 10px 0;
+    width: max-content; /* Allows text to extend beyond the viewport */
+    text-shadow: 
+    -2px -2px 0px var(--primary-color),  /* Top left */
+     2px -2px 0px var(--primary-color),  /* Top right */
+    -2px  2px 0px var(--primary-color),  /* Bottom left */
+     2px  2px 0px var(--primary-color);  /* Bottom right */
+  }
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%); /* Start fully off-screen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* End fully off-screen to the left */
+    }
+  }
+  
+
+/* Carousel Text */
+
 @media screen and (max-width: 1297px) {
 
     .landingpage-container {
-        margin-left: 220px;
-        margin-right: 220px;
+        /* margin-left: 220px;
+        margin-right: 220px; */
     }
 
 }
@@ -446,12 +491,12 @@ header {
 @media screen and (max-width: 992px) {
 
     .landingpage-container {
-        margin-left: 200px;
-        margin-right: 200px;
+        /* margin-left: 200px;
+        margin-right: 200px; */
     }
 
     .landingpage .header-box {
-        padding-top: 8rem;
+        /* padding-top: 8rem; */
     }
 
     .landingpage .header-box img {
@@ -465,8 +510,8 @@ header {
 @media screen and (max-width: 699px) {
 
     .landingpage-container {
-        margin-left: 130px;
-        margin-right: 130px;
+        /* margin-left: 130px;
+        margin-right: 130px; */
     }
 
 }
@@ -475,20 +520,20 @@ header {
 
 
     .landingpage-container {
-        margin-left: 110px;
-        margin-right: 110px;
+        /* margin-left: 110px;
+        margin-right: 110px; */
     }
 
     .landingpage .header-box h1 {
         font-size: 3rem;
     }
 }
-
+ 
 @media screen and (max-width: 475px) {
 
     .landingpage-container {
-        margin-left: 80px;
-        margin-right: 80px;
+        /* margin-left: 80px;
+        margin-right: 80px; */
     }
 
     .landingpage .header-box h1 {

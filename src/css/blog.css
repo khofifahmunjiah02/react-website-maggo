@@ -1,0 +1,18 @@
+.tombol_blog button{
+    width: 15%;
+    margin-left: 15px;
+}
+
+.berita_terbaru_wrap:hover {
+    cursor: pointer;
+}
+
+.tombol_tombol_blog {
+    cursor: not-allowed; /* shows 'not-allowed' icon */
+    pointer-events: none; /* makes the button non-interactive */
+    
+  }
+
+/* .tombol_tombol_blog {
+    padding-left: 20px;
+} */

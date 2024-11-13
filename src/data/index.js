@@ -16,16 +16,11 @@ export const navLinks = [
   },
   {
     id: 4,
-    path: "ruang-tanya",
-    text: "Ruang Tanya",
-  },
-  {
-    id: 5,
-    path: "blog",
+    path: "",
     text: "Blog",
   },
   {
-    id: 6,
+    id: 5,
     path: "tentang-kami",
     text: "Tentang Kami",
   },
