@@ -12,6 +12,7 @@ import Blog from "./pages/Blog"
 import TentangKami from "./pages/TentangKami"
 import ProdukPembelian  from "./pages/ProdukPembelian"
 import Penjemputan from "./pages/Penjemputan"
+import Penjemputan2 from "./pages/Penjemputan2"
 
 export default function App() {
   return (
@@ -26,7 +27,8 @@ export default function App() {
         <Route path="/blog" Component={Blog} />
         <Route path="/tentang-kami" Component={TentangKami} />
         <Route path="/produk-pembelian" Component= {ProdukPembelian} />
-        <Route path="/penjemputan" Component={Penjemputan}></Route>
+        <Route path="/penjemputan" Component={Penjemputan}/>
+        <Route path="/penjemputan2" Component={Penjemputan2}/>
       </Routes>
       
       

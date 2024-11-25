@@ -1,0 +1,459 @@
+.solusi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px; /* Sesuaikan dengan tinggi navbar */
+  }
+  
+  .satuSolusi {
+    width: 100%;
+ 
+  }
+  
+  .textLeft {
+    text-align: left;
+  }
+  
+  .contentWrapper {}
+  
+  .heading {
+    font-size: 64px;
+    font-weight: bold;
+    margin: 108px 0 16px 0;
+  }
+  
+  .highlight {
+    color: #ff9c00;
+  }
+  
+  .description {
+    font-size: 20px;
+    margin-bottom: 48px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Membungkus elemen jika terlalu panjang */
+    justify-content: space-between; /* Mengatur jarak antar card */
+    /*gap: px;Menambahkan jarak antar card */
+  }
+  
+  
+  .card {
+    text-align: center;
+    width: 300px;
+    height: 390px;
+    overflow: hidden;
+  }
+  
+  .cardBody {
+    padding: 20px;
+  }
+  
+  .cardImg {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+    object-fit: contain;
+}
+
+  .cardTitle {
+    font-size: 24px;
+    color: #42c3ff;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  
+  .cardText {
+    font-size: 16px;
+  }
+  
+  .hargaJual {
+    margin: 108px 0;
+  }
+  
+  .priceContainer {
+    width: 1248px;
+    height: 210px;
+    border: 1px solid #ddd;
+    padding: 48px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  
+  .priceHeading {
+    font-weight: 800;
+    font-size: 32px;
+    padding: 20px;
+  }
+  
+
+
+  .priceValue {
+    font-size: 64px;
+    font-weight: bold;
+    color: #2971fd;
+    padding: 20px;
+  }
+  
+
+  .priceValue::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 6px; /* Tinggi garis */
+    background-color: orange; /* Warna garis oranye */
+    margin-top: 8px; /* Jarak antara teks dan garis */
+  }
+  
+  .penjelasanCaraKerja {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .line {
+    width: 3px;
+    height: 40px;
+    background-color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .caraKerjaText {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .stepsHeading {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 20px 0;
+  }
+  
+  .stepsContainer {}
+  
+  .stepCard {
+    width: 405px;
+    height: 587px;
+    margin-bottom: 24px;
+    border: none !important; /* Menghilangkan border */
+    box-shadow: none !important; /* Jika ada bayangan border */
+  }
+  
+  .stepCardImg {
+    height: 216px;
+    width: 405px;
+    border-radius: 16px;
+  }
+  
+  .stepCardBody {
+    padding: 35px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .stepCardNumber {
+    margin-right: 1px;
+  }
+  
+.stepCardBody .stepCardTitle {
+  font-weight: bold;
+  font-size: 24px;
+  /* Properti CSS lainnya */
+}
+  
+  .stepCardText {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .buttonContainer .customStartButton {
+    width: 292px;
+    height: 54px;
+    font-size: 20px; /* Ubah ukuran teks */
+    font-weight: bold;
+    border-radius: 12px; /* Ubah border-radius */
+    margin-bottom: 108px;
+  }
+  
+
+.faq_wrap {
+  text-align: left;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap; /* Untuk memastikan elemen beralih ke bawah saat tidak cukup ruang */
+}
+
+.faq_image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Tambahkan spasi di bawah gambar untuk layar kecil */
+}
+
+.judul_faq {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.penjelasan_faq2 {
+  font-size: 2rem; /* Ukuran default */
+  font-weight: 800;
+  color: #333;
+  text-align: center; /* Pusatkan teks pada layar kecil */
+}
+
+/* Media query untuk layar kecil */
+@media (max-width: 475px) {
+  .judul_faq {
+    font-size: 1rem;
+    margin-left: 0; /* Sesuaikan margin */
+    text-align:left;
+  }
+
+  .penjelasan_faq2 {
+    font-size: 1.5rem; /* Perkecil ukuran font */
+    margin-left: 0;
+  }
+
+  .faq_row {
+    flex-direction: column; /* Susun elemen secara vertikal */
+  }
+}
+
+
+/* Accordion */
+.custom-accordion-card {
+  border-top: none; /* Remove top border */
+  border-left: none; /* Remove left border */
+  border-right: none; /* Remove right border */
+  border-bottom: 1px solid #e0e0e0; /* Only add bottom border */
+  box-shadow: none;
+}
+
+.custom-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.custom-accordion-header:hover {
+  background-color: #f8f9fa;
+}
+
+.custom-accordion-body {
+  padding: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+.custom-accordion-arrow {
+  width: 16px;
+  height: auto;
+  margin-left: 8px;
+}
+
+
+@media screen and (max-width: 475px) { 
+  .faq_row .col-3 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+}
+
+
+
+  /* Responsive untuk max-width: 575px jasa*/
+  
+@media (max-width: 575px) {
+  .satuSolusi {
+    margin: 50px 20px;
+  }
+
+  .heading {
+    font-size: 32px;
+    margin: 54px 0 8px 0;
+  }
+
+  .description {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .row {
+    justify-content: center; /* Mengatur card agar berpusat */
+    gap: 20px; /* Menambahkan jarak antar card */
+    flex-direction: row; /* Mengatur elemen card secara horizontal */
+    align-items: center; /* Mengatur card agar terpusat secara vertikal */
+  }
+
+  .card {
+    width: 260px;
+    height: auto;
+    margin-left: 80px;
+  }
+
+  .cardImg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .cardText {
+    font-size: 14px;
+  }
+
+  .priceContainer {
+    width: 100%;
+    height: auto;
+    padding: 24px;
+  }
+
+  .priceHeading {
+    font-size: 24px;
+  }
+
+  .priceValue {
+    font-size: 48px;
+  }
+
+  .stepsHeading {
+    font-size: 28px;
+  }
+
+  .stepCard {
+    width: 100%;
+    height: auto;
+  }
+
+  .stepCardImg {
+    height: auto;
+    width: 100%;
+  }
+
+  .stepCardBody {
+    padding: 20px;
+  }
+
+  .stepCardTitle {
+    font-size: 20px;
+  }
+
+  .stepCardText {
+    font-size: 14px;
+  }
+
+  .buttonContainer .customStartButton {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+}
+
+
+
+/* Responsive untuk max-width: 475px */
+@media (max-width: 475px) {
+  .satuSolusi {
+    margin: 30px 10px;
+  }
+
+  .heading {
+    font-size: 28px;
+    margin: 40px 0 8px 0;
+  }
+
+  .description {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    justify-content: center; /* Mengatur card agar berpusat */
+    gap: 12px; /* Menambahkan jarak antar card */
+    flex-direction: column; /* Mengubah arah card menjadi kolom untuk layar lebih kecil */
+    align-items: center; /* Mengatur card agar terpusat secara vertikal */
+  }
+
+  .card {
+    width: 220px;
+    height: auto;
+    margin-left: 80px;
+  }
+
+  .cardImg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .cardText {
+    font-size: 12px;
+  }
+
+  .priceContainer {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .priceHeading {
+    font-size: 20px;
+  }
+
+  .priceValue {
+    font-size: 36px;
+  }
+
+  .stepsHeading {
+    font-size: 24px;
+  }
+
+  .stepCard {
+    width: 100%;
+    height: auto;
+  }
+
+  .stepCardImg {
+    height: auto;
+    width: 100%;
+  }
+
+  .stepCardBody {
+    padding: 16px;
+  }
+
+  .stepCardTitle {
+    font-size: 18px;
+  }
+
+  .stepCardText {
+    font-size: 12px;
+  }
+
+  .buttonContainer .customStartButton {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
