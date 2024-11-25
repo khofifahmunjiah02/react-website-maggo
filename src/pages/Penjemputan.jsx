@@ -11,7 +11,8 @@ const Penjemputan = () => {
     navigate("/penjemputan2");
   };
 
-  return ( <div>
+  return (
+    <div>
       {/* Header */}
       <Container className="top_produkpembelian d-flex align-items-center">
         <div className="produk_pembelian">
@@ -38,7 +39,7 @@ const Penjemputan = () => {
 
       {/* Form Section */}
       <section className="pembelian_data">
-  <Container fluid className="pembelian_data_container">
+  <Container fluid>
     <section className="pembelian_data_diri_fullwidth">
       <Form>
         <div className="benefit_title mb-4">
@@ -113,8 +114,8 @@ const Penjemputan = () => {
             </Form>
           </section>
         </Container>
-  </section>
-</div>
+      </section>
+    </div>
   );
 };
 

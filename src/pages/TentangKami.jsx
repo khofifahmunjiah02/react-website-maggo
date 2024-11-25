@@ -25,18 +25,18 @@ const TentangKami = () => {
         <Container className='position-relative text-center'>
           <Row className="tentangkami-header-box d-flex align-items-center">
               <img src={RectangleImage} alt="Background rectangle" className='w-100 bg-image' />
-              <img src={Logo1Image} alt='Maggo Logo' className='logo-overlay' />
-              <Col>
-              <h1>
-                Kami Menjadi Jembatan <br /> <span>Antara <span className="thin-text">Peternak Maggot dan</span></span> <span className="thin-text">Penghasilan Sampah Organik</span>
+               <img src={Logo1Image} alt='Maggo Logo' className='logo-overlay' />
+              <Col xs={12} md={6} className='text-center'>
+              <h1 style={{color:'#303030', fontSize:'40px'}}>
+                Kami Menjadi Jembatan <br /> <span>Antara <span className="thin-text" style={{color:'#828282'}}>Peternak Maggot dan</span></span> <span className="thin-text" style={{color:'#828282'}}>Penghasilan Sampah Organik</span>
               </h1>
             </Col>
-            <Col>
-              <h4>
+            <Col xs={12} md={6} className='text-center text-md-start'>
+              <h4 style={{color:'#828282', fontSize:'20px'}}>
                 Kami menghubungkan peternak maggot dengan sumber sampah organik untuk memastikan pasokan yang stabil dengan cara menjual sampah organik anda kepada kami. Kami mempermudah distribusi sampah organik agar dapat diolah secara efektif dan berkelanjutan. Dengan cara ini, kami berkontribusi dalam mengurangi sampah di TPA dan mendukung budidaya maggot yang ramah lingkungan.
               </h4>
             </Col>
-          </Row>
+          </Row> 
         </Container>
       </header>
 
@@ -95,18 +95,22 @@ const TentangKami = () => {
               <h4 className="mt-3">Maggo sebagai pionir dalam dunia pengolahan sampah organik selalu bersemangat untuk menggali ide-ide baru dan teknologi terkini untuk menemukan cara-cara yang lebih efisien dan efektif dalam mengolah sampah organik melalui budidaya maggot.</h4>
             </Col>
           </Row>
-          <Row className="align-items-center mb-5">
-            <Col md={6}>
-              <h1 className='text-start'>
-                Maggo mengedepankan <span className="text-kualitas">kualitas</span>
-              </h1>
-              <h4 className="mt-3 text-start">
+          <Row className="align-items-center mb-5 tentangkami-layout">
+          <Col md={6} className="text-center order-1 order-md-2">
+              <img src={Gimi6Image} alt="gimi6.png" className="w-75"/>
+            </Col>
+            <Col md={6} className='order-2 order-md-1'>
+              <div className='mengedepankan'>
+                <h1 className='text-center text-md-start'>
+                  Maggo mengedepankan <span className="text-kualitas">kualitas</span>
+                </h1>
+
+              </div>
+              <h4 className="mt-3 text-center text-md-start">
                 Maggo tidak hanya fokus pada kuantitas, tetapi juga pada kualitas produk dan layanan yang kami berikan. Setiap produk Maggo dibuat dengan bahan-bahan berkualitas tinggi dan melalui proses produksi yang terstandarisasi.
               </h4>
             </Col>
-            <Col md={6} className="d-flex justify-content-end">
-              <img src={Gimi6Image} alt="gimi6.png" className="w-75"/>
-            </Col>
+            
           </Row>
         </Container>
       </div>
@@ -115,7 +119,7 @@ const TentangKami = () => {
         <Container>
           <Row className="mb-5">
             <Col className='fw-bold'>
-              <h1>Tim yang Menginspirasi <br /> Lahirnya Ide Kreatif <span className='fw-bolder'>Maggo</span></h1>
+              <h1 style={{color:'#828282'}}>Tim yang Menginspirasi <br /> Lahirnya Ide Kreatif <span className='fw-bolder' style={{color:'#303030'}}>Maggo</span></h1>
             </Col>
           </Row>
           <Row className="tentangkami-team-images">
@@ -151,4 +155,3 @@ const TentangKami = () => {
 };
 
 export default TentangKami;
-

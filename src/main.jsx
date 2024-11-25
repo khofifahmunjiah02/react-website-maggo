@@ -7,9 +7,12 @@ import './css/main.css';
 import './css/landingpage.css';
 import './css/produk.css';
 import './css/TentangKami.css';
+import './css/faqComponents.css';
 import './css/jasa.module.css';
 import './css/penjemputan.css'; 
 import './css/penjemputan2.css';
+import './css/konfirpembayaran.css'
+import './css/PusatBantuan.css';
 
 import { BrowserRouter } from 'react-router-dom'
 
