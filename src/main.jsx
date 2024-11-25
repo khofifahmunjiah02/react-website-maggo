@@ -7,6 +7,9 @@ import './css/main.css';
 import './css/landingpage.css';
 import './css/produk.css';
 import './css/TentangKami.css';
+import './css/jasa.module.css';
+import './css/penjemputan.css'; 
+import './css/penjemputan2.css';
 
 import { BrowserRouter } from 'react-router-dom'
 
