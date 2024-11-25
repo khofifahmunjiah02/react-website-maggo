@@ -13,6 +13,9 @@ import TentangKami from "./pages/TentangKami"
 import ProdukPembelian  from "./pages/ProdukPembelian"
 import Penjemputan from "./pages/Penjemputan"
 
+import Konfirpembayaran from "./pages/Konfirpembayaran"
+import Pemesananfinal from "./pages/Pemesananfinal"
+
 export default function App() {
   return (
     <div>
@@ -27,6 +30,8 @@ export default function App() {
         <Route path="/tentang-kami" Component={TentangKami} />
         <Route path="/produk-pembelian" Component= {ProdukPembelian} />
         <Route path="/penjemputan" Component={Penjemputan}></Route>
+        <Route path="/konfirpembayaran" Component={Konfirpembayaran}/>
+        <Route path="/pemesananfinal" Component={Pemesananfinal}/>
       </Routes>
       
       
