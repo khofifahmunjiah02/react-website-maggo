@@ -16,6 +16,7 @@ import Penjemputan2 from "./pages/Penjemputan2"
 
 import Konfirpembayaran from "./pages/Konfirpembayaran"
 import Pemesananfinal from "./pages/Pemesananfinal"
+import PusatBantuan from "./pages/PusatBantuan"
 
 export default function App() {
   return (
@@ -30,11 +31,12 @@ export default function App() {
         <Route path="/blog" Component={Blog} />
         <Route path="/tentang-kami" Component={TentangKami} />
         <Route path="/produk-pembelian" Component= {ProdukPembelian} />
-        <Route path="/penjemputan" Component={Penjemputan}></>
+        <Route path="/penjemputan" Component={Penjemputan} />
         <Route path="/konfirpembayaran" Component={Konfirpembayaran}/>
         <Route path="/pemesananfinal" Component={Pemesananfinal}/>
         <Route path="/penjemputan" Component={Penjemputan}/>
         <Route path="/penjemputan2" Component={Penjemputan2}/>
+        <Route path="/PusatBantuan" Component={PusatBantuan} />
       </Routes>
       
       
