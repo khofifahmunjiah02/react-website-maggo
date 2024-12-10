@@ -5,8 +5,42 @@ header {
 }
 
 .landingpage-container {
-    margin-left: 240px;
-    margin-right: 240px;
+    /* margin-left: 240px;
+    margin-right: 240px; */
+}
+
+.help-form-container {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 1000;
+    width: 250px;
+    max-width: 90%;
+    padding: 15px;
+    border-radius: 8px;
+}
+  
+  .help-button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+  
+  .help-button img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+
+.landingpage {
+    width: 100%;
 }
 
 .landingpage .header-box h1
@@ -53,7 +87,7 @@ header {
     display: inline;
     color: var(--secondary-color-text);
 }
-
+ 
 /* Style Homepage Header */
 
 /* Style Homepage Kontributor & Jumlah Sampah */
@@ -63,9 +97,9 @@ header {
 }
 
 .hitungan .hitungan-cont {
-    padding: 0;
+    /* padding: 0;
     margin-left: 240px;
-    margin-right: 240px;
+    margin-right: 240px; */
 }
 
 .hitungan .hitungan-container {
@@ -143,10 +177,10 @@ header {
 
 .penjelasan .penjelasan_container {
     padding: 108px 12px;
-    margin-left: 240px;
+    /* margin-left: 240px;
     margin-right: 240px;
     width: 1103px;
-    height: 100%;
+    height: 100%; */
 }
 
 .penjelasan .penjelasan_container .penjelasan_wrap {
@@ -184,16 +218,19 @@ header {
 }
 
 .penjelasan .penjelasan_container .penjelasan_wrap .penjelasan_gambar {
-    /* display: flex;         Optional: allows images to sit in a row */
-    gap: 20px;             /* Adjust spacing between images if needed */
-    max-width: 100%;       /* Keep container within the width limit */
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 0px;
 }
 
 .penjelasan .penjelasan_container .penjelasan_wrap .penjelasan_gambar img{
-    padding-top: 10px;
     width: 100%;
     height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 /* Style Penjelasan */
@@ -206,10 +243,10 @@ header {
 
 .yuk .yuk_container {
     /* padding: 108px 12px; */
-    margin-left: 240px;
+    /* margin-left: 240px;
     margin-right: 240px;
     width: 1103px;
-    height: 100%;
+    height: 100%; */
 }
 
 .yuk .yuk_container .yuk_wrap {
@@ -238,10 +275,10 @@ header {
 
 .benefit_container {
     padding: 108px 12px;
-    margin-left: 240px;
+    /* margin-left: 240px;
     margin-right: 240px;
     width: 1103px;
-    height: 100%;
+    height: 100%; */
 }
 
 .benefit_title {
@@ -337,10 +374,10 @@ header {
 
 .testimoni_container {
     padding: 48px 12px;
-    margin-left: 240px;
+    /* margin-left: 240px;
     margin-right: 240px;
-    /* width: 1103px; */
-    height: 100%;
+    width: 1103px;
+    height: 100%; */
 }
 
 .testimoni_wrap {
@@ -372,13 +409,13 @@ header {
 
 }
 
-.testimoni_wrap .testimoni_img {
-    position: absolute; /* Use absolute for specific placement */
-    right: 120px;       /* Adjust as needed */
-    top: 40px;          /* Adjust as needed */
+.testimoni_img {
+    /* position: absolute;   */
+    right: 120px;        
+    top: 40px;         
     width: 400px;       
-    height: auto;       /* Maintain aspect ratio */
-    z-index: 1;    
+    height: auto;       
+    z-index: 1;   
 }
 
 .testimoni_wrap .quote_wrap .quote_box {
@@ -433,66 +470,509 @@ header {
 
 /* Style Testimoni */
 
-@media screen and (max-width: 1297px) {
+/* Carousel Text */
 
-    .landingpage-container {
-        margin-left: 220px;
-        margin-right: 220px;
+.scrolling-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+.scrolling-text h1 {
+    display: inline-block;
+    white-space: nowrap; /* Prevent line break */
+    animation: scrollText 40s linear infinite; /* Adjust timing as needed */
+    font-size: 64px; /* Adjust text size */
+    font-weight: bold;
+    padding: 10px 0;
+    width: max-content; /* Allows text to extend beyond the viewport */
+    text-shadow: 
+    -2px -2px 0px var(--primary-color),  /* Top left */
+     2px -2px 0px var(--primary-color),  /* Top right */
+    -2px  2px 0px var(--primary-color),  /* Bottom left */
+     2px  2px 0px var(--primary-color);  /* Bottom right */
+  }
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%); /* Start fully off-screen to the right */
     }
-
-}
-
+    100% {
+      transform: translateX(-100%); /* End fully off-screen to the left */
+    }
+  }
+  
+/* Responsif */
 
 @media screen and (max-width: 992px) {
 
-    .landingpage-container {
-        margin-left: 200px;
-        margin-right: 200px;
+    .landingpage {
+        padding-top: 100px !important;
     }
 
-    .landingpage .header-box {
+ 
+}
+
+@media screen and (max-width: 775px) {
+    /* Landing Page */
+    .landingpage .header-box h1 {
         padding-top: 8rem;
+        font-size: 2.2rem;
+    }
+
+    .landingpage .header-box p {
+        font-size: 1rem;
     }
 
     .landingpage .header-box img {
-        width: 350px;
-        height: 380px;
+        width: 60%;
+        max-width: 250px;
+        height: auto;
         display: block;
-        margin-inline: auto;
+        margin: 15px auto;
+    }
+
+    /* Tombol */
+    .btn-jemputsampah {
+        margin: 25px auto;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .help-form-container {
+        bottom: 18px !important;
+        right: 18px !important;
+    }
+
+    .help-button {
+        padding: 8px 14px !important;
+        font-size: 14px !important;
+    }
+
+    .help-button img {
+        width: 22px !important;
+        height: 22px !important;
+        margin-left: 7px !important;
+        margin-right: 6px !important;
+    }
+
+    .scrolling-text {
+        margin-top: 0;
+        position: relative;
+        top: -15px;
+        text-align: center;
+    }
+
+    .scrolling-text h1 {
+        font-size: 1.8rem;
+        animation: scrollText 20s linear infinite;
+    }
+
+
+    .hitungan .box-1 h1, .hitungan .box-2 h1 {
+        font-size: 20px;
+    }
+
+    .hitungan .box-1 p, .hitungan .box-2 p {
+        font-size: 14px;
+    }
+
+
+    /* Yuk Section */
+    .yuk .yuk_container {
+        padding: 18px;
+    }
+
+    .yuk .yuk_container .yuk_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 18px;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_text {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_text h1 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_image {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+        margin-top: 22px;
+    }
+
+    /* Benefit Section */
+    .benefit_big h1 {
+        font-size: 42px;
+    }
+
+    .benefit_sub p {
+        font-size: 26px;
+    }
+
+    .benefit_jasa {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .jasa_box img {
+        width: 65px;
+        margin-bottom: 14px;
+    }
+
+    .jasa_box h1 {
+        font-size: 1.3rem;
+    }
+
+    .jasa_box p {
+        font-size: 0.95rem;
+    }
+
+    .jasa_box .btn {
+        font-size: 0.9rem;
+        padding: 9px 16px;
+    }
+
+    /* Testimoni Section */
+    .testimoni_img img {
+        width: 75%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .testimoni_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimoni_title {
+        text-align: left;
+        margin-bottom: 16px;
+        margin-right: 500px;
+    }
+
+    .testimoni_wrap .quote_wrap {
+        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimoni_wrap .quote_wrap .quote_box {
+        width: 90%;
+        margin: 0 auto 16px;
+    }
+
+    .quote_box_wrap {
+        padding: 12px;
+        padding-left: 20px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .quote_icon {
+        width: 45px;
+        margin-bottom: 8px;
+    }
+
+    .quote_box_p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .quote_nama_wrap h4 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .quote_nama_wrap p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .testimoni_img {
+        margin: 0 auto;
+        display: block;
     }
 }
 
-@media screen and (max-width: 699px) {
 
-    .landingpage-container {
-        margin-left: 130px;
-        margin-right: 130px;
-    }
-
-}
 
 @media screen and (max-width: 575px) {
-
-
-    .landingpage-container {
-        margin-left: 110px;
-        margin-right: 110px;
+    /* Landing Page */
+    .landingpage .header-box h1 {
+        padding-top: 7rem;
+        font-size: 1.7rem;
     }
 
-    .landingpage .header-box h1 {
-        font-size: 3rem;
+    .landingpage .header-box p {
+        font-size: 15px;
+    }
+
+    .landingpage .header-box img {
+        width: 180px;
+        height: auto;
+        display: block;
+        margin: 12px auto;
+    }
+
+    /* Tombol */
+    .btn-jemputsampah {
+        margin: 20px auto;
+    }
+
+    .help-form-container {
+        bottom: 15px !important;
+        right: 15px !important;
+    }
+
+    .help-button {
+        padding: 7px 12px !important;
+        font-size: 13px !important;
+    }
+
+    .help-button img {
+        width: 20px !important;
+        height: 20px !important;
+        margin-left: 6px !important;
+        margin-right: 5px !important;
+    }
+
+    .scrolling-text {
+        display: none;
+    }
+
+    /* Hitungan */
+    .hitungan .hitungan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hitungan .box-1, .hitungan .box-2 {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .hitungan .box-2 h1 {
+        font-size: 24px;
+    }
+
+    .hitungan .box-1 h1, .hitungan .box-2 h1 {
+        font-size: 24px;
+    }
+
+    .hitungan .box-1 p, .hitungan .box-2 p {
+        font-size: 14px;
+    }
+
+    .hitungan .hitungan-container .gimi_1 img {
+        width: 110px;
+        height: auto;
+    }
+
+    .hitungan .hitungan-container .hitungan-text {
+        padding: 12px;
+        max-width: 100%;
+    }
+
+    /* Penjelasan */
+    .penjelasan .penjelasan_container {
+        padding: 16px 10px;
+    }
+
+    .penjelasan .penjelasan_wrap .penjelasan_big h1 {
+        font-size: 38px !important;
+    }
+
+    .penjelasan .penjelasan_wrap .penjelasan_sub p {
+        font-size: 24px !important;
+    }
+
+    .penjelasan .penjelasan_container .penjelasan_wrap .penjelasan_gambar {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 35px;
+    }
+
+    .penjelasan .penjelasan_container .penjelasan_wrap .penjelasan_gambar img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+}
+
+    /* Yuk Section */
+    .yuk .yuk_container {
+        padding: 16px;
+    }
+
+    .yuk .yuk_container .yuk_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_text {
+        text-align: center;
+        margin-bottom: 14px;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_text h1 {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_image {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /* Benefit Section */
+    .benefit_container {
+        padding: 50px 0;
+        margin-left: 10px;
+    }
+
+    .benefit_big h1 {
+        font-size: 40px;
+    }
+
+    .benefit_sub p {
+        font-size: 24px;
+    }
+
+    .benefit_jasa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .jasa_box img {
+        width: 60px;
+        margin-bottom: 12px;
+    }
+
+    .jasa_box h1 {
+        font-size: 1.2rem;
+    }
+
+    .jasa_box p {
+        font-size: 0.9rem;
+    }
+
+    .jasa_box .btn {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+
+    /* Testimoni Section */
+    .testimoni_img img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .testimoni_wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimoni_title {
+        text-align: left;
+        margin-bottom: 20px;
+        margin-right: 340px;
+    }
+
+    .testimoni_big {
+        margin-right: 90px;
+    }
+
+    .testimoni_wrap .quote_wrap {
+        gap: 12px;
+    }
+
+    .testimoni_wrap .quote_wrap .quote_box {
+        margin-bottom: 16px;
+        
+    }
+
+    .quote_wrap {
+        gap: 14px;
+        padding: 14px;
+    }
+
+    .quote_box {
+        width: calc(100% - 2rem);
+        margin: 0 auto 14px;
+    }
+
+    .quote_box_wrap {
+        padding: 14px;
+        padding-left: 24px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .quote_icon {
+        width: 50px;
+        margin-bottom: 8px;
+    }
+
+    .quote_box_p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .quote_nama_wrap h4 {
+        font-size: 1.1rem;
+    }
+
+    .quote_nama_wrap p {
+        font-size: 0.8rem;
+    }
+
+    .testimoni_img {
+        margin: 0 auto;
+        display: block;
     }
 }
 
+
+
 @media screen and (max-width: 475px) {
-
-    .landingpage-container {
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-
+    /* Landing Page */
     .landingpage .header-box h1 {
-        font-size: 2.4rem;
+        padding-top: 6rem;
+        font-size: 1.5rem;
     }
 
     .landingpage .header-box p {
@@ -500,18 +980,481 @@ header {
     }
 
     .landingpage .header-box img {
-        width: 250px;
-        height: 280px;
+        width: 160px;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+
+    /* Tombol */
+    .btn-jemputsampah {
+        margin: 15px auto;
+    }
+
+    .help-form-container {
+        bottom: 12px !important;
+        right: 12px !important;
+    }
+
+    .help-button {
+        padding: 6px 10px !important;
+        font-size: 12px !important;
+    }
+
+    .help-button img {
+        width: 18px !important;
+        height: 18px !important;
+        margin-left: 5px !important;
+        margin-right: 4px !important;
+    }
+
+    .scrolling-text {
+        display: none;
+    }
+
+    /* Hitungan */
+    .hitungan .hitungan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hitungan .box-1, .hitungan .box-2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hitungan .box-2 h1 {
+        font-size: 22px;
+    }
+
+    .hitungan .box-1 h1, .hitungan .box-2 h1 {
+        font-size: 22px;
+    }
+
+    .hitungan .box-1 p, .hitungan .box-2 p {
+        font-size: 13px;
+    }
+
+    .hitungan .hitungan-container .gimi_1 img {
+        width: 100px;
+        height: auto;
+    }
+
+    .hitungan .hitungan-container .hitungan-text {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    /* Penjelasan */
+    .penjelasan .penjelasan_container {
+        padding: 14px 8px;
+    }
+
+    .penjelasan .penjelasan_wrap .penjelasan_big h1 {
+        font-size: 36px !important;
+    }
+
+    .penjelasan .penjelasan_wrap .penjelasan_sub p {
+        font-size: 22px !important;
+    }
+
+    .penjelasan .penjelasan_container .penjelasan_wrap .penjelasan_gambar {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .penjelasan .penjelasan_container .penjelasan_wrap .penjelasan_gambar img {
+        border-radius: 6px;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    /* Yuk Section */
+    .yuk .yuk_container {
+        padding: 14px;
+    }
+
+    .yuk .yuk_container .yuk_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 14px;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_text {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_text h1 {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_text p {
+        font-size: 0.85rem;
+        text-align: left;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_image {
+        width: 100%;
+        max-width: 240px;
+        height: auto;
+        margin-top: 18px;
+    }
+
+    /* Benefit Section */
+    .benefit_container {
+        padding: 45px 0px !important;
+        margin-left: 10px !important;
+        width: fit-content; 
+    }
+
+    .benefit_big h1 {
+        font-size: 38px;
+    }
+
+    .benefit_sub p {
+        font-size: 22px;
+    }
+
+    .benefit_jasa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .jasa_box img {
+        width: 55px;
+        margin-bottom: 10px;
+    }
+
+    .jasa_box h1 {
+        font-size: 1.1rem;
+    }
+
+    .jasa_box p {
+        font-size: 0.85rem;
+    }
+
+    .jasa_box .btn {
+        font-size: 0.8rem;
+        padding: 7px 12px;
+    }
+
+    /* Testimoni Section */
+    .testimoni_img img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .testimoni_wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimoni_title {
+        text-align: left;
+        margin-bottom: 18px;
+        margin-right: 240px;
+    }
+
+    .testimoni_wrap .quote_wrap {
+        gap: 10px;
+    }
+
+    .testimoni_wrap .quote_wrap .quote_box {
+        margin-bottom: 14px;
+    }
+
+    .quote_wrap {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .quote_box {
+        width: calc(100% - 1.8rem);
+        margin: 0 auto 12px;
+    }
+
+    .quote_box_wrap {
+        padding: 12px;
+        padding-left: 22px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .quote_icon {
+        width: 45px;
+        margin-bottom: 6px;
+    }
+
+    .quote_box_p {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+
+    .quote_nama_wrap h4 {
+        font-size: 1rem;
+    }
+
+    .quote_nama_wrap p {
+        font-size: 0.75rem;
+    }
+
+    .testimoni_img {
+        margin: 0 auto;
+        display: block;
     }
 }
 
+
+
 @media screen and (max-width: 375px) {
+    /* Landing Page */
     .landingpage .header-box h1 {
-        font-size: 1rem;
-        padding-left: 600px;    
+        padding-top: 5rem;
+        font-size: 1.3rem;
     }
 
     .landingpage .header-box p {
         font-size: 12px;
     }
+
+    .landingpage .header-box img {
+        width: 120px;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .btn-jemputsampah {
+        margin: 10px auto;
+    }
+
+    .help-form-container {
+        bottom: 10px !important;
+        right: 10px !important; 
+    }
+
+    .help-button {
+        padding: 4px 6px !important;
+        font-size: 10px !important;
+    }
+
+    .help-button img {
+        width: 14px !important;
+        height: 14px !important;
+        margin-left: 3px !important;
+        margin-right: 3px !important;
+    }
+
+    .scrolling-text {
+        display: none;
+    }
+
+    /* Hitungan */
+    .hitungan .hitungan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hitungan .box-1, .hitungan .box-2 {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .hitungan .box-2 h1 {
+        font-size: 18px;
+    }
+
+    .hitungan .box-1 h1, .hitungan .box-2 h1 {
+        font-size: 18px;
+    }
+
+    .hitungan .box-1 p, .hitungan .box-2 p {
+        font-size: 11px;
+    }
+
+    .hitungan .hitungan-container .gimi_1 img {
+        width: 80px;
+        height: auto;
+    }
+
+    .hitungan .hitungan-container .hitungan-text {
+        padding: 6px;
+        max-width: 100%;
+    }
+
+    /* Penjelasan */
+    .penjelasan .penjelasan_container {
+        padding: 10px 6px;
+    }
+
+    .penjelasan .penjelasan_wrap .penjelasan_big h1 {
+        font-size: 32px !important;
+    }
+
+    .penjelasan .penjelasan_wrap .penjelasan_sub p {
+        font-size: 18px !important;
+    }
+
+    .penjelasan .penjelasan_container .penjelasan_wrap .penjelasan_gambar {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        margin-bottom: 20px;
+    }
+
+    .penjelasan .penjelasan_container .penjelasan_wrap .penjelasan_gambar img {
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    /* Yuk Section */
+    .yuk .yuk_container {
+        padding: 12px;
+    }
+
+    .yuk .yuk_container .yuk_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_text {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_text h1 {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_text p {
+        font-size: 0.75rem;
+        text-align: left;
+    }
+
+    .yuk .yuk_container .yuk_wrap .yuk_image {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    /* Benefit Section */
+    .benefit_container {
+        padding: 40px 0 !important;
+    }
+
+    .benefit_big h1 {
+        font-size: 36px;
+    }
+
+    .benefit_sub p {
+        font-size: 18px;
+    }
+
+    .benefit_jasa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .jasa_box img {
+        width: 45px;
+        margin-bottom: 6px;
+    }
+
+    .jasa_box h1 {
+        font-size: 0.9rem;
+    }
+
+    .jasa_box p {
+        font-size: 0.7rem;
+    }
+
+    .jasa_box .btn {
+        font-size: 0.7rem;
+        padding: 5px 8px;
+    }
+
+    /* Testimoni Section */
+    .testimoni_img img {
+        width: 40%;
+        max-width: 140px;
+    }
+
+    .testimoni_wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimoni_title {
+        text-align: left;
+        margin-bottom: 12px;
+        margin-right: 140px;
+    }
+
+    .testimoni_big {
+        text-align: left;
+        margin-bottom: 12px;
+    }
+
+    .testimoni_wrap .quote_wrap {
+        gap: 6px;
+    }
+
+    .testimoni_wrap .quote_wrap .quote_box {
+        margin-bottom: 10px;
+    }
+
+    .quote_wrap {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .quote_box {
+        width: calc(100% - 1.5rem);
+        margin: 0 auto 8px;
+    }
+
+    .quote_box_wrap {
+        padding: 8px;
+        padding-left: 18px;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+    }
+
+    .quote_icon {
+        width: 35px;
+        margin-bottom: 4px;
+    }
+
+    .quote_box_p {
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
+
+    .quote_nama_wrap h4 {
+        font-size: 0.8rem;
+    }
+
+    .quote_nama_wrap p {
+        font-size: 0.6rem;
+    }
+
+    /* .testimoni_img {
+        width: 65%;
+        margin: 0 auto;
+        display: block;
+    } */
 }
