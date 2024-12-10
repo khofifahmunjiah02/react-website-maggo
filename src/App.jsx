@@ -22,6 +22,8 @@ import ScrollToTop from "./components/ScrollToTop"
 import { ProductProvider } from "./components/ProductContext"
 import { CartProvider } from "./components/CartContext"
 import { FormProvider } from "./components/FormContext"
+import PusatBantuan from "./pages/PusatBantuan"
+
 
 export default function App() {
   return (
