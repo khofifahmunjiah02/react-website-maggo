@@ -535,6 +535,45 @@ header {
         font-size: 1rem;
     }
 
+
+    .help-form-container {
+        bottom: 18px !important;
+        right: 18px !important;
+    }
+
+    .landingpage {
+        padding-top: 100px !important;
+    }
+
+ 
+}
+
+@media screen and (max-width: 775px) {
+    /* Landing Page */
+    .landingpage .header-box h1 {
+        padding-top: 8rem;
+        font-size: 2.2rem;
+    }
+
+    .landingpage .header-box p {
+        font-size: 1rem;
+    }
+
+    .landingpage .header-box img {
+        width: 60%;
+        max-width: 250px;
+        height: auto;
+        display: block;
+        margin: 15px auto;
+    }
+
+    /* Tombol */
+    .btn-jemputsampah {
+        margin: 25px auto;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
     .help-form-container {
         bottom: 18px !important;
         right: 18px !important;
@@ -668,6 +707,7 @@ header {
         align-items: center;
     }
 
+
     .testimoni_wrap .quote_wrap .quote_box {
         width: 90%;
         margin: 0 auto 16px;
@@ -695,6 +735,7 @@ header {
         font-size: 1rem;
         text-align: center;
     }
+
 
     .quote_nama_wrap p {
         font-size: 0.8rem;
@@ -770,6 +811,7 @@ header {
 
     .hitungan .box-1 h1, .hitungan .box-2 h1 {
         font-size: 24px;
+
     }
 
     .hitungan .box-1 p, .hitungan .box-2 p {
@@ -804,6 +846,7 @@ header {
         gap: 12px;
         margin-bottom: 35px;
     }
+
 
     .penjelasan .penjelasan_container .penjelasan_wrap .penjelasan_gambar img {
         border-radius: 8px;
@@ -945,6 +988,7 @@ header {
     .quote_nama_wrap h4 {
         font-size: 1.1rem;
     }
+
 
     .quote_nama_wrap p {
         font-size: 0.8rem;
@@ -1098,8 +1142,10 @@ header {
 
     /* Benefit Section */
     .benefit_container {
-        padding: 45px 0;
-        margin-left: 10px;
+        padding: 45px 0px !important;
+        margin-left: 10px !important;
+        width: fit-content; 
+
     }
 
     .benefit_big h1 {
@@ -1342,7 +1388,8 @@ header {
 
     /* Benefit Section */
     .benefit_container {
-        padding: 40px 0;
+        padding: 40px 0 !important;
+
     }
 
     .benefit_big h1 {

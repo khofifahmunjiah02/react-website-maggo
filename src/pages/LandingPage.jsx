@@ -117,14 +117,16 @@ const LandingPage = () => {
                 {/* Here lies penjelasan */}
                 {/* Here lies Yuk */}
                 {/* Here lies benefit */}
-                {/* Here lies testimoni */}
-                
-                <div className='help-form-container'>
+                {/* Here lies testimoni */}              
+                {/* <div className='help-form-container'>
+
                     <button className='help-button' onClick={toggleForm}>
                     <span>Ruang Tanya</span>
                     <img src={Bantuan} alt='Pusat Bantuan' style={{marginRight: "10px"}}/>
                     </button>
-                </div>
+
+                </div> */}
+
             </div>
         </Container>
                 <div className="scrolling-text"> 

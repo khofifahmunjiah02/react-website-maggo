@@ -11,6 +11,8 @@ import './css/jasa.module.css';
 import './css/penjemputan.css'; 
 import './css/penjemputan2.css';
 import './css/PusatBantuan.css'
+import './css/faqComponents.css';
+
 
 import { BrowserRouter } from 'react-router-dom'
 

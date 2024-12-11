@@ -28,89 +28,132 @@ const Jasa = () => {
 
   return (
     <Container className={`${styles.solusi}`}>
-    <div className={styles.satuSolusi}>
-      <Container className={`${styles.textLeft} my-5`}>
-        <div className={styles.contentWrapper}>
-          <h2 className={styles.heading}>
-            Satu Solusi untuk <span className={styles.highlight}>Membangun<br /></span> Kebiasaan Kelola Sampah Organik
-          </h2>
-          <p className={styles.description}>
-            Layanan ini membantu Anda mengelola sampah organik dengan mudah. Kami menjemput sampah organik yang ingin
-            dijual dari rumah atau bisnis Anda, kemudian menyalurkannya kepada peternak maggot yang mengolahnya menjadi
-            produk bernilai seperti pakan ternak. Selain berkontribusi untuk lingkungan, Anda juga mendapatkan imbalan dari setiap limbah yang Anda kumpulkan.
-          </p>
-        </div>
+      <div className={styles.satuSolusi}>
+        <header className={`${styles.Content} w-100  d-flex align-items-center`}>
+          <Container className="my-5 text-left">
+            <div className={styles['content-wrapper']}>
+              <h2 className={`fw-normal  ${styles.title}`}>
+                Satu Solusi untuk <span style={{ color: "#ff9c00" }}>Membangun</span> Kebiasaan Kelola Sampah Organik
+              </h2>
+              <p className="mt-3">
+                Layanan ini membantu Anda mengelola sampah organik dengan mudah. Kami menjemput sampah organik yang ingin dijual dari rumah atau bisnis Anda, kemudian menyalurkannya kepada peternak maggot yang mengolahnya menjadi produk bernilai seperti pakan ternak. Selain berkontribusi untuk lingkungan, Anda juga mendapatkan imbalan dari setiap limbah yang Anda kumpulkan.
+              </p>
+            </div>
 
+            <Row className="mt-5 align-items-stretch">
+              <Col md={3} className="d-flex mb-4">
+                <Card className="text-center shadow-sm flex-fill">
+                  <Card.Body>
+                    <Card.Img
+                      variant="top"
+                      src={kemudahan}
+                      alt="Kemudahan dan Kenyamanan"
+                      style={{
+                        width: "108px",
+                        height: "114px",
+                        marginBottom: "20px",
+                      }}
+                    />
+                    <Card.Title className={styles['text-kemudahan']}>
+                      Kemudahan dan Kenyamanan
+                    </Card.Title>
+                    <Card.Text>
+                      Maggo menyediakan layanan penjemputan limbah organik tanpa
+                      perlu membawanya ke tempat pembuangan.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col md={3} className="d-flex mb-4">
+                <Card className="text-center shadow-sm flex-fill">
+                  <Card.Body>
+                    <Card.Img
+                      variant="top"
+                      src={intensif}
+                      alt="Insentif Finansial"
+                      style={{
+                        width: "108px",
+                        height: "114px",
+                        marginBottom: "20px",
+                      }}
+                    />
+                    <Card.Title className="text-intensif">
+                      Insentif Finansial
+                    </Card.Title>
+                    <Card.Text>
+                      Memberikan insentif bagi Anda yang menjual limbah organik,
+                      memotivasi untuk lebih peduli pada pengelolaan limbah.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
 
-        <Row className={styles.row}>
-          {/* Card components */}
-          <Col md={3} className="d-flex mb-4">
-            <Card className={styles.card}>
-              <Card.Body className={styles.cardBody}>
-                <Card.Img className={styles.cardImg} variant="top" src={kemudahan} alt="Kemudahan dan Kenyamanan" />
-                <Card.Title className={styles.cardTitle} style={{ color: '#42c3ff', fontWeight:'bold' }} >Kemudahan dan Kenyamanan 
-                </Card.Title>
-                <Card.Text className={styles.cardText}>
-                  Maggo menyediakan layanan penjemputan limbah organik tanpa perlu membawanya ke tempat pembuangan.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
+              <Col md={3} className="d-flex mb-4">
+                <Card className="text-center shadow-sm flex-fill">
+                  <Card.Body>
+                    <Card.Img
+                      variant="top"
+                      src={kontribusi}
+                      alt="Kontribusi Lingkungan"
+                      style={{
+                        width: "108px",
+                        height: "114px",
+                        marginBottom: "20px",
+                      }}
+                    />
+                    <Card.Title className="text-kontribusi">
+                      Kontribusi Lingkungan
+                    </Card.Title>
+                    <Card.Text>
+                      Maggo membantu mengurangi sampah organik yang berakhir di
+                      tempat pembuangan akhir, dan berkontribusi pada lingkungan.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
 
-
-
-          <Col md={3} className="d-flex mb-4">
-            <Card className={styles.card}>
-              <Card.Body className={styles.cardBody}>
-                <Card.Img className={styles.cardImg} variant="top" src={intensif} alt="intensif" />
-                <Card.Title className={styles.cardTitle} style={{ color: '#007bff', fontWeight:'bold' }}>Intensif<br/></Card.Title>
-                <Card.Text className={styles.cardText}>
-                  Maggo menyediakan layanan penjemputan limbah organik tanpa perlu membawanya ke tempat pembuangan.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
- 
-          <Col md={3} className="d-flex mb-4">
-            <Card className={styles.card}>
-              <Card.Body className={styles.cardBody}>
-                <Card.Img className={styles.cardImg} variant="top" src={kontribusi} alt="kontribusi lingkungan" />
-                <Card.Title className={styles.cardTitle} style={{ color: '#28a745', fontWeight:'bold' }}>kontribusi<br/> lingkungan</Card.Title>
-                <Card.Text className={styles.cardText}>
-                  Maggo menyediakan layanan penjemputan limbah organik tanpa perlu membawanya ke tempat pembuangan.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col md={3} className="d-flex mb-4">
-            <Card className={styles.card}>
-              <Card.Body className={styles.cardBody}>
-                <Card.Img className={styles.cardImg} variant="top" src={dukungan} alt="dukungan" />
-                <Card.Title className={styles.cardTitle}style={{ color: '#ffc107', fontWeight:'bold' }}>Dukungan Perekonomian Lokal</Card.Title>
-                <Card.Text className={styles.cardText}>
-                  Maggo menyediakan layanan penjemputan limbah organik tanpa perlu membawanya ke tempat pembuangan.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
+              <Col md={3} className="d-flex mb-4">
+                <Card className="text-center shadow-sm flex-fill">
+                  <Card.Body>
+                    <Card.Img
+                      variant="top"
+                      src={dukungan}
+                      alt="Dukungan Perekonomian Lokal"
+                      style={{
+                        width: "108px",
+                        height: "114px",
+                        marginBottom: "20px",
+                      }}
+                    />
+                    <Card.Title className="text-dukungan">
+                      Dukungan Perekonomian Lokal
+                    </Card.Title>
+                    <Card.Text>
+                      Maggo bekerja sama dengan petani maggot untuk menjual limbah
+                      organik yang dikumpulkan.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
             </Row>
           </Container>
+        </header>
 
 
-          <Container className={styles.hargaJual}>
-        <Row className={`${styles.customRow} justify-content-center`}>
-          <Col md={8} lg={12} className={styles.priceContainer}>
-            <div>
-              <h3 className={styles.priceHeading}>Harga Jual Sampah Hari Ini</h3>
-              <p className="text-muted" style={{ marginLeft: '20px', }}>24 Oktober 2024</p>
-            </div>
-            <div className="ms-auto text-right">
-              <h2 className={styles.priceValue}>Rp 10.000/Kg</h2>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+        <Container className={styles.hargaJual}>
+          <Row className={`${styles.customRow} justify-content-center`}>
+            <Col md={8} lg={12} className={styles.priceContainer}>
+              <div>
+                <h3 className={styles.priceHeading}>Harga Jual Sampah Hari Ini</h3>
+                <p className="text-muted" style={{ marginLeft: '20px', }}>24 Oktober 2024</p>
+              </div>
+              <div className="ms-auto text-right">
+                <h2 className={styles.priceValue}>Rp 10.000/Kg</h2>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+
 
       <Container className={styles.caraKerjaContainer}>
         <div className={styles.caraKerjaWrap}>

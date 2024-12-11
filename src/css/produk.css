@@ -4,7 +4,7 @@
 .top_produk {
     margin-left: auto;
     margin-right: auto;
-    width: 1103px;
+    width: 100%;
 }
 .produk_container {
     margin-top: 157px;
@@ -14,9 +14,7 @@
     width: 1103px;
 }
 
-.produk_list {
 
-}
 
 .produk_list .produk_bar {
     border: 1px solid #ccc;
@@ -72,5 +70,15 @@
     border: none;
 }
   
+.pinned-subtotal {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 15px 0;
+}
 
 /* Produk Pembelian Styles */
