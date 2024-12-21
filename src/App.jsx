@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 
-import NavbarComponents from "./components/NavbarComponents"
+import NavBarComponents from "./components/NavbarComponents"
 import FooterComponents from "./components/FooterComponents"
  
 
