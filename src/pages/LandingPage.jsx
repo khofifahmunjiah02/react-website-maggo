@@ -2,10 +2,8 @@ import { Container, Row, Col } from 'react-bootstrap'
 import { useState, useEffect, useRef } from "react";
 import MainImage from '../assets/img/hero_page1.png'
 import gimi1 from '../assets/img/landingpage/gimi_1.png'
-import Content1 from '../assets/img/landingpage/Content1.png'
-import Content2 from '../assets/img/landingpage/Content2.png'
-import Content3 from '../assets/img/landingpage/Content3.png'
-import Content4 from '../assets/img/landingpage/Content4.png'
+import mengapa1 from '../assets/img/landingpage/mengapa_1.png'
+import mengapa2 from '../assets/img/landingpage/mengapa_2.png'
 import yuk from '../assets/img/landingpage/yuk.png'
 import trash from '../assets/img/landingpage/trash.png'
 import money from '../assets/img/landingpage/money-change.png'
@@ -13,10 +11,9 @@ import quote from '../assets/img/landingpage/quote-up.png'
 import quote1 from '../assets/img/landingpage/quote1.png'
 import quote2 from '../assets/img/landingpage/quote2.png'
 import gimi2 from '../assets/img/landingpage/gimi_testimoni.png'
-import Bantuan from "../assets/img/icon/message-question.png"
 import { SDG } from '../components/SDG'
 import { useNavigate } from "react-router-dom";
-
+import sosmed from '../assets/img/sosmed.png'
  
 
 
@@ -27,7 +24,6 @@ const LandingPage = () => {
     const handleNavigation = () => {
         navigate("/penjemputan"); 
     };
-
 
     const toggleForm = () => {
         navigate("/PusatBantuan");
@@ -84,7 +80,7 @@ const LandingPage = () => {
             clearInterval(counter);
         }
         }, 16); // Approximately 60fps
-    };
+    }; 
 
       
   return (
@@ -95,13 +91,15 @@ const LandingPage = () => {
                     <Container className='landingpage-container'>
                         <Row className='header-box d-flex align-items-center'>
                             <Col lg="6">
+                                
+                                <img src={sosmed} style={{width: '128px', height:'auto', paddingBottom:'24px'}} alt="" />
                                 <h1 className='mb-4' >
                                     Bersama <span>Maggo</span> <br /> Ubah Sampahmu <br />Jadi <span className='cuan'>CUAN!</span>
                                 </h1>
                                 <p className='mb-4' >
-                                    Solusi Menguntungkan dan <br />Mudah Membangun Kebiasaan Memuang sampah
+                                    Solusi Menguntungkan dan <br />Mudah Membangun Kebiasaan Membuang sampah
                                 </p>
-                                <button className="btn btn-primary d-flex align-items-center justify-content-center btn-jemputsampah" onClick={handleNavigation}> 
+                                <button className="btn btn-primary d-flex align-items-center justify-content-center" onClick={handleNavigation}> 
                                     <p>
                                         Jemput Sampahku
                                     </p>
@@ -117,20 +115,12 @@ const LandingPage = () => {
                 {/* Here lies penjelasan */}
                 {/* Here lies Yuk */}
                 {/* Here lies benefit */}
-                {/* Here lies testimoni */}              
-                {/* <div className='help-form-container'>
-
-                    <button className='help-button' onClick={toggleForm}>
-                    <span>Ruang Tanya</span>
-                    <img src={Bantuan} alt='Pusat Bantuan' style={{marginRight: "10px"}}/>
-                    </button>
-
-                </div> */}
-
+                {/* Here lies testimoni */}
+                
             </div>
         </Container>
                 <div className="scrolling-text"> 
-                    <h1>UBAH SAMPAH JADI CUAN! ✷ UBAH SAMPAH JADI CUAN!✷UBAH SAMPAH JADI CUAN! ✷ UBAH SAMPAH JADI CUAN! ✷ UBAH SAMPAH JADI CUAN! ✷ UBAH SAMPAH JADI CUAN! ✷ </h1>
+                    <h1>UBAH SAMPAH JADI CUAN! ✷ UBAH SAMPAH JADI CUAN! ✷ UBAH SAMPAH JADI CUAN! ✷ UBAH SAMPAH JADI CUAN! ✷ UBAH SAMPAH JADI CUAN! ✷ UBAH SAMPAH JADI CUAN! ✷ </h1>
                 </div>
 
         
@@ -188,10 +178,8 @@ const LandingPage = () => {
                             </p>
                         </div>
                         <div className="penjelasan_gambar">
-                            <img src={Content1} alt="" />
-                            <img src={Content2} alt="" />
-                            <img src={Content3} alt="" />
-                            <img src={Content4} alt="" />
+                            <img src={mengapa1} alt="" />
+                            <img src={mengapa2} alt="" />
                         </div>
                     </div>
                 </Container>
